@@ -31,7 +31,7 @@ fun main() {
         println(ch)
     }
 
-    //advanced loops
+    //advanced loops with index and step function
     var ndx = 0
     for (item in 10.rangeTo(20).step(2)) {
         println("${++ndx}) - $item")
@@ -39,8 +39,17 @@ fun main() {
     }
     println()
 
-    //advanced loops
+    //advanced loops with index and step function
     for ((index, item) in 10.rangeTo(20).step(2).withIndex()) {
         println("${index + 1}) - $item")
     }
+
+    //advanced loops
+    val myArray = arrayOf("a", "b", "c", "d", "e")
+    for (item in myArray.indices) {
+        println("At index $item is ${myArray[item]}")
+    }
+    println()
+
 }
+
