@@ -30,4 +30,17 @@ fun main() {
     for (ch in "biscuit") {
         println(ch)
     }
+
+    //advanced loops
+    var ndx = 0
+    for (item in 10.rangeTo(20).step(2)) {
+        println("${++ndx}) - $item")
+
+    }
+    println()
+
+    //advanced loops
+    for ((index, item) in 10.rangeTo(20).step(2).withIndex()) {
+        println("${index + 1}) - $item")
+    }
 }

@@ -1,7 +1,7 @@
 package com.example.learnkotlin.syntax
 
 
-    //fun declares a new function
+//fun declares a new function
 //main is where the program starts
 
     val topLevelVal = "top level val"
@@ -36,9 +36,16 @@ package com.example.learnkotlin.syntax
         // Read only list
         val readOnlyShapes = listOf("triangle", "square", "circle")
         println(readOnlyShapes)
+
         // Mutable list with explicit type declaration
         val shapes: MutableList<String> = mutableListOf("triangle", "square", "circle")
         println(shapes)
-    }
+
+
+
+        }
+
+
+
 
 
