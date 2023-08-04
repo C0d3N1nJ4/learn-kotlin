@@ -30,4 +30,21 @@ fun main() {
     if (p.middleName != null) {
         val middleNameLength = p.middleName.length
     }
+
+    //assert that a var is not null
+    var n = Person(firstName = "Ewald", middleName = null, lastName = "Kok")
+    if (n.middleName != null) {
+        //possible but don't do this - use safe call operator instead
+        val middleNameLength = n.middleName!!.length
+    }
+
+    //safe call operator
+    var m = Person(firstName = "Ewald", middleName = null, lastName = "Kok")
+    val middleNameLength = m.middleName?.length
+
+    //safe call operator with Elvis
+    var o = Person(firstName = "Ewald", middleName = null, lastName = "Kok")
+    val middleNameLength2 = o.middleName?.length ?: 0
+
 }
+
