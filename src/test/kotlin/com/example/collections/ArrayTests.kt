@@ -21,4 +21,13 @@ class ArrayTests {
             assertTrue(index in 0..5)
         }
     }
+
+    @Test
+    fun `withIndex return IndexValues`() {
+        val strings = arrayOf("this" , "is", "an", "array", "of", "strings")
+         for ((index, value) in strings.withIndex()) {
+            println("Index $index maps to $value")
+            assertTrue(index in 0..5)
+        }
+    }
 }
